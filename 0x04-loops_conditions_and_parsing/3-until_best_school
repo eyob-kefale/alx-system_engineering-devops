@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
-#Creating a script that uses an until loop
-x=0
-until [ $x -gt 9 ]
-do
-	echo "Holberton School"
-	((x++))
+# print a string 10 times using until loop
+
+i=0
+
+until false; do
+  echo "Best School"
+  ((i++))
+  if [[ $i -lt 10 ]]; then
+    continue
+  else
+    break
+  fi
 done

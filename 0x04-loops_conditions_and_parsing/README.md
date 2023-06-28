@@ -1,27 +1,120 @@
-# Loops, conditions and parsing
+# 0x04. Loops, conditions and parsing 
 
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about loops (`while`, `until` and `for`), condition statements (`if`, `else`, `elif` and `case`), shebangs and how to create SSH keys with **Bash**.
+## Resource
 
-## Technologies
-* Scripts written in Bash 4.3.11(1)
-* Tested on Ubuntu 14.04 LTS
+- [Loops sample](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html)
+- [Variable assignment and arithmetic](https://tldp.org/LDP/abs/html/ops.html)
+- [Comparison operators](https://tldp.org/LDP/abs/html/comparison-ops.html)
+- [File test operators](https://tldp.org/LDP/abs/html/fto.html)
+- [Make your scripts portable](https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html)
 
-## Files
+## Tasks
 
-| Filename | Description |
-| -------- | ----------- |
-| `0-RSA_public_key.pub` | File that stores a RSA public key to access servers via SSH |
-| `1-for_holberton_school` | Displays `Holberton School` 10 times with a `for` loop |
-| `2-while_holberton_school` | Displays `Holberton School` 10 times with a `while` loop |
-| `3-until_holberton_school` | Displays `Holberton School` 10 times with an `until` loop |
-| `4-if_9_say_hi` | Displays `Holberton School` 10 times and displays `Hi` for the 9th iteration |
-| `5-4_bad_luck_8_is_your_chance` | Loops from 1 to 10 and displays `Holberton School`, except for 4th and 8th iteration which displays `bad luck` and `good luck`, respectively  |
-| `6-superstitious_numbers` | Displays numbers from 1 to 20 and displays `bad luck from China`, `bad luck from Japan` and `bad luck from Italy` for the 4th, 9th and 17th iteration, respectively |
-| `7-clock` | Displays the time for 12 hours and 59 minutes |
-| `8-for_ls` | Displays the content of the current directory in a list format |
-| `9-to_file_or_not_to_file` | Gives information about the `holbertonschool` file |
-| `10-fizzbuzz` | Displays the `fizzbuzz` sequence |
-| `100-read_and_cut` | Displays the content of the file `/etc/passwd` |
-| `101-tell_the_story_of_passwd` | Displays the content of the file `/etc/passwd` with an specific message |
-| `102-lets_parse_apache_logs` | Displays the visitor IP along with the HTTP status code from an Apache log file |
-| `103-dig_the-data` | Groups visitors by IP and HTTP status code and displays the occurrences, from the greatest to the lowest number |
+<details>
+<summary><a href="./0-RSA_public_key.pub">0. Create a SSH RSA key pair</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/HkVtBRMg/image.png' border='0' alt='image'/></a><br>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+      <li><a href="https://docs.rackspace.com/support/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
+      <li><a href="https://www.youtube.com/watch?v=iuqXFC_qIvA&t=46s">data centers</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary><a href="./1-for_best_school">1. For Best School loop</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XYvX60Nr/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./2-while_best_school">2. While Best School loop</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/KcfDJy01/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./3-until_best_school">3. Until Best School loop</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/y8jvVtx4/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./4-if_9_say_hi">4. If 9, say Hi!</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/vBCCykBL/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./5-4_bad_luck_8_is_your_chance">5. 4 bad luck, 8 is your chance</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/SxMkcYGF/image.png' border='0' alt='image'/></a><br>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://freakonomics.com/2006/07/05/lucky-8s-in-china/">8 in the Chinese culture</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Chinese_numerology#Four">4 in the Chinese culture</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary><a href="./6-superstitious_numbers">6. Superstitious numbers</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XvHdRPT0/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./7-clock">7. Clock</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/YqRc5vMR/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./8-for_ls">8. For ls</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/wjzrjgTv/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./9-to_file_or_not_to_file">9. To file, or not to file</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/RFwsBY5f/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./10-fizzbuzz">10. FizzBuzz</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/85bsJLq3/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./100-read_and_cut">11. Read and cut</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/FHQyLVqF/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./101-tell_the_story_of_passwd">12. Tell the story of passwd</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/g0vNZG3x/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/">Understanding /etc/passwd</a></li>
+      <li><a href="https://tldp.org/LDP/abs/html/internalvariables.html">IFS (internal field separator)</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary><a href="./102-lets_parse_apache_logs">13. Let's parse Apache logs</a></summary><br>
+<a href='https://postimg.cc/rDm2Zg6H' target='_blank'><img src='https://i.postimg.cc/P5bfxFSd/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server">Apache HTTP Server</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP status codes</a></li>
+      <li><a href="https://www.the-art-of-web.com/system/logs/">System: Analyzing Apache log Files</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary><a href="./103-dig_the-data">14. Dig the data</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/T2WBc5gs/image.png' border='0' alt='image'/></a>
+</details>

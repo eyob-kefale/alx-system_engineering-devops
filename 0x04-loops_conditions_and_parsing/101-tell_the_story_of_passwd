@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
-#Script that displays the content of the file /etc/passwd
-while IFS= read -r line
-do
-    username=$(echo "$line" | cut -f 1 -d ':')
-    password=$(echo "$line" | cut -f 2 -d ':')
-    userID=$(echo "$line" | cut -f 3 -d ':')
-    groupID=$(echo "$line" | cut -f 4 -d ':')
-    userINFO=$(echo "$line" | cut -f 5 -d ':')
-    home=$(echo "$line" | cut -f 6 -d ':')
-    command=$(echo "$line" | cut -f 7 -d ':')
+# Tell the story of passwd
 
+file="/etc/passwd"
 
-    echo -n "The user $username is part of the $groupID gang, "
-    echo -n "lives in $home and rides $command."
-    echo -n " $userID's place is protected by the passcode $password, "
-    echo "more info about the user here: $userINFO"
-done < "/etc/passwd"
+while IFS= read -r line; do
+  user=$(echo "$line" | cut -d ':' -f1)
+  gid=$(echo "$line" | cut -d ':' -f4)
+  dir=$(echo "$line" | cut -d ':' -f6)
+  shell=$(echo "$line" | cut -d ':' -f7)
+  uid=$(echo "$line" | cut -d ':' -f3)
+  pass=$(echo "$line" | cut -d ':' -f2)
+  info=$(echo "$line" | cut -d ':' -f5)
+
+  echo "The user $user is part of the $gid gang, lives in $dir and rides $shell. $uid's place is protected by the passcode $pass, more info about the user here: $info"
+done < "$file"
