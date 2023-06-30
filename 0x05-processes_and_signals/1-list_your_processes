@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-#Bash script that displays a list of current processes
-ps -aux --forest
+# list all my currently running processes
+
+# source: https://linuxize.com/post/ps-command-in-linux/
+ps -auxf
