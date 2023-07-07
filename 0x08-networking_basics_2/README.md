@@ -1,16 +1,32 @@
-# Networking basics 1
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about what is localhost/127.0.0.1, what is 0.0.0.0, what is `/etc/hosts` and how to display the machine's active network interfaces.
+# 0x08. Networking basics #1
 
-## Technologies
-* Scripts written in Bash 4.3.11(1)
-* Tested on Ubuntu 14.04 LTS
+## Resource
 
-## Files
+- [What is localhost](https://en.wikipedia.org/wiki/Localhost)
+- [What is 0.0.0.0](https://en.wikipedia.org/wiki/0.0.0.0)
+- [What is the hosts file](https://www.makeuseof.com/tag/modify-manage-hosts-file-linux/)
+- [Netcat examples](https://www.thegeekstuff.com/2012/04/nc-command-examples/)
 
-| Filename | Description |
-| -------- | ----------- |
-| `0-localhost` | Answer of a question related with `localhost` |
-| `1-wildcard` | Answer of a question related with `0.0.0.0` |
-| `2-change_your_home_IP` | Bash script that configures an Ubuntu server |
-| `3-show_attached_IPs` | Bash script that displays all active IPv4 IPs on the machine |
-| `4-port_listening_on_localhost` | Bash script that listens on port `98` on `localhost` |
+## Tasks
+
+<details>
+<summary><a href="./0-change_your_home_IP">0. Change your home IP</a></summary><br>
+<a href='https://postimg.cc/949cJmZ5' target='_blank'><img src='https://i.postimg.cc/W4Wtpt43/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://web.archive.org/web/20171117023601/http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/">Read this because the checker is running on docker</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary><a href="./1-show_attached_IPs">1. Show attached IPs</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Kjn0h65Z/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./100-port_listening_on_localhost">2. Port listening on localhost</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/9QTZ8dJh/image.png' border='0' alt='image'/></a>
+</details>
