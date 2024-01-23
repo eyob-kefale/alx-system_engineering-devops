@@ -21,4 +21,4 @@ A postmortem is a tool widely used in the tech industry. After any outage, the t
 * And to ensure that the root cause(s) of the outage has been discovered and that measures are taken to make sure it will be fixed.
 
 A sample incidence report for a company called Semulink is written below.
-[Semulink incidence report](https://medium.com/@eyobkefale1/postmortem-7dd0cc3fe46d)
+[My Post](https://medium.com/@eyobkefale1/postmortem-7dd0cc3fe46d)
